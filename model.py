@@ -149,7 +149,7 @@ def release(model):
 
 
 class LiArcFace(nn.Module):
-    def __init__(self, num_classes, emb_size=512, m=0.4, s=64.0):
+    def __init__(self, num_classes, emb_size=512, m=0.45, s=64.0):
         super().__init__()
         self.weight = nn.Parameter(torch.empty(num_classes, emb_size))
         nn.init.xavier_normal_(self.weight)
