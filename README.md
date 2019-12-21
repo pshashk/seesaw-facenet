@@ -1,4 +1,4 @@
-## PyTorch implementation of [Seesaw-shuffleFaceNet](https://arxiv.org/abs/1908.09124).
+## PyTorch implementation of [Seesaw-shuffleFaceNet](https://arxiv.org/abs/1908.09124)
 
 Differences from [official implementation](https://github.com/cvtower/seesawfacenet_pytorch/blob/master/src/seesaw_models/seesaw_shuffleFaceNet.py) are minimal:
  - [Li-ArcFace loss](https://arxiv.org/abs/1907.12256)
@@ -11,11 +11,13 @@ Differences from [official implementation](https://github.com/cvtower/seesawface
 
 | Dataset  | Accuracy |
 |----------|----------|
-| agedb_30 |  96.07%  |
-| cfp_ff   |  99.50%  |
-| cfp_fp   |  94.40%  |
-| cplfw    |  89.62%  |
-| lfw      |  99.57%  |
-| vgg2_fp  |  93.68%  |
+| agedb_30 |  96.12%  |
+| cfp_ff   |  99.56%  |
+| cfp_fp   |  94.49%  |
+| cplfw    |  89.52%  |
+| lfw      |  99.62%  |
+| vgg2_fp  |  93.24%  |
 
 For training code see [foamliu/InsightFace-v3](https://github.com/foamliu/InsightFace-v3) and similar projects.
+
+Tested with nightly builds of PyTorch (`1.4.0.dev20191216`).
