@@ -9,14 +9,15 @@ Differences from [official implementation](https://github.com/cvtower/seesawface
 
 [Pretrained model (TorchScript)](https://drive.google.com/file/d/1Ub5CI3nqTekLnG1AH1cGrQcwblW5YWoa/)
 
-| Dataset  | Accuracy |
-|----------|----------|
-| agedb_30 |  96.12%  |
-| cfp_ff   |  99.56%  |
-| cfp_fp   |  94.49%  |
-| cplfw    |  89.52%  |
-| lfw      |  99.62%  |
-| vgg2_fp  |  93.24%  |
+Validation metrics can be computed by running `python3 eval.py <path to model> <path to a folder containing InsightFace bin files>`:
+```
+cfp_ff: 99.56%
+lfw: 99.62%
+agedb_30: 96.12%
+vgg2_fp: 93.24%
+cfp_fp: 94.49%
+cplfw: 89.52%
+```
 
 For training code see [foamliu/InsightFace-v3](https://github.com/foamliu/InsightFace-v3) and similar projects.
 
